@@ -17,7 +17,7 @@ class RoleSeeder extends Seeder
     {
         $role = [
             ['name'=>'Admin','guard_name'=>'web', 'created_at'=> Carbon::now()],
-            ['name'=>'Manager','guard_name'=>'web', 'created_at'=> Carbon::now()],
+            ['name'=>'BusOperator','guard_name'=>'web', 'created_at'=> Carbon::now()],
             ['name'=>'Customer','guard_name'=>'web', 'created_at'=> Carbon::now()],
         ];
 

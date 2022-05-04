@@ -55,7 +55,7 @@
                         <!--end::Wrapper-->
                         <!--begin::Input-->
                         <input class="form-control form-control-lg form-control-solid" type="password" name="password"
-                            autocomplete="on" value="12345678" />
+                            autocomplete="on" value="123456" />
                         <!--end::Input-->
                     </div>
                     <!--end::Input group-->

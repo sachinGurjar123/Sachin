@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "bff5dff9-f0f1-49f5-bb74-3cec573dcee5",
+		"name": "Fastbus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BusOperator",
+			"item": [
+				{
+					"name": "BusOperator Test Api(Get)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_fastbus_url}}/bus_operator/test",
+							"host": [
+								"{{local_fastbus_url}}"
+							],
+							"path": [
+								"bus_operator",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "authMobileCheck",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "mobile_no",
+											"value": "5263214599",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local_fastbus_url}}/customer/login",
+									"host": [
+										"{{local_fastbus_url}}"
+									],
+									"path": [
+										"customer",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "authWithOtp",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "mobile_no",
+											"value": "5263214599",
+											"type": "text"
+										},
+										{
+											"key": "otp",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local_fastbus_url}}/customer/login-otp",
+									"host": [
+										"{{local_fastbus_url}}"
+									],
+									"path": [
+										"customer",
+										"login-otp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "mobile_no",
+											"value": "5263214599",
+											"type": "text"
+										},
+										{
+											"key": "otp",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local_fastbus_url}}/customer/logout",
+									"host": [
+										"{{local_fastbus_url}}"
+									],
+									"path": [
+										"customer",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Customer Test Api(Get)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_fastbus_url}}/customer/test",
+							"host": [
+								"{{local_fastbus_url}}"
+							],
+							"path": [
+								"customer",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Faq",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_fastbus_url}}/customer/faqs",
+							"host": [
+								"{{local_fastbus_url}}"
+							],
+							"path": [
+								"customer",
+								"faqs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Content Page Url's(get-content-page-url)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local_fastbus_url}}/customer/get-content-page-url",
+							"host": [
+								"{{local_fastbus_url}}"
+							],
+							"path": [
+								"customer",
+								"get-content-page-url"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Support Msg",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "ffbasdjfkjas",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local_fastbus_url}}/customer/store-support-msg",
+							"host": [
+								"{{local_fastbus_url}}"
+							],
+							"path": [
+								"customer",
+								"store-support-msg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

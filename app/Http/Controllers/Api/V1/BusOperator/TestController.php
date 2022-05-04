@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api\V1\Manager;
+namespace App\Http\Controllers\Api\V1\BusOperator;
 
 use App\Http\Controllers\Controller;
 

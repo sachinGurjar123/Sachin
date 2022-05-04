@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\V1\Customer\TestController as CustomerTestController;
-use App\Http\Controllers\Api\V1\Manager\TestController as ManagerTestController;
+use App\Http\Controllers\Api\V1\BusOperator\TestController as BusOperatorTestController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,8 +22,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::group(['middleware' => ['optimizeImages'], 'prefix' => '/v1/manager', 'namespace' => 'Api\V1\Manager'], function () {
-    Route::get('/test', [ManagerTestController::class, 'test']);
+Route::group(['middleware' => ['optimizeImages'], 'prefix' => '/v1/BusOperator', 'namespace' => 'Api\V1\BusOperator'], function () {
+    Route::get('/test', [BusOperatorTestController::class, 'test']);
 });
 
 Route::group(['middleware' => ['optimizeImages'], 'prefix' => '/v1/customer', 'namespace' => 'Api\V1\Customer'], function () {
@@ -34,6 +34,16 @@ Route::group(['middleware' => ['optimizeImages'], 'prefix' => '/v1/customer', 'n
         Route::post('login', 'authMobileCheck');
         Route::post('login-otp', 'authWithOtp');
     });
+
+    Route::controller(CFaqController::class)->group(function (){
+        Route::get('faqs', 'index');
+    });
+
+    /* Content Page Url's */
+    Route::get('/get-content-page-url', 'CMoreInfoController@getContentPageUrl');
+
+    /*Support Manager */
+    Route::post('/store-support-msg', 'CMoreInfoController@storeSupportMsg');
 
     // -------- Register And Login API ----------
     Route::group(['middleware' => ['jwt.auth']], function () {

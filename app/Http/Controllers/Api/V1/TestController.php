@@ -10,7 +10,7 @@ class TestController extends Controller
     {
         return response()->json([
             'status' => true,
-            'message' => 'Manager Test Api Works successfully',
+            'message' => 'BusOperator Test Api Works successfully',
         ], 200);
     }
 }

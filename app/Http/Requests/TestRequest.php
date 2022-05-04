@@ -26,12 +26,12 @@ class TestRequest extends FormRequest
         if (!request()->is('admin/roles/create')) {
             return [
                 'name' => 'required',
-                'email' => 'required|email|max:150|unique:users,email,' . request()->id,
+                'email' => 'required|email|unique:users,email,' . request()->id,
             ];
         } else {
             return [
                 'name' => 'required',
-                'email' => 'required|max:150|email|unique:users,email,',
+                'email' => 'required|email|unique:users,email,',
             ];
         }
     }
