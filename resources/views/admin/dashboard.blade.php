@@ -24,9 +24,9 @@
                                     <!--begin::Col-->
                                     <div class="col bg-light-primary px-6 py-8 rounded-2 me-7 mb-7">
                                         <!--begin::Svg Icon | path: icons/duotone/Communication/Add-user.svg-->
-                                        <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
+                                        <span class="svg-icon svg-icon-4x svg-icon-primary d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
-                                                viewBox="0 0 24 24" version="1.1">
+                                            viewBox="0 0 24 24" version="1.1">
                                                 <path
                                                     d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
                                                     fill="#000000" fill-rule="nonzero" opacity="0.3" />
@@ -46,7 +46,7 @@
                                     <!--begin::Col-->
                                     <div class="col bg-light-primary px-6 py-8 rounded-2 me-7 mb-7">
                                         <!--begin::Svg Icon | path: icons/duotone/Communication/Add-user.svg-->
-                                        <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
+                                        <span class="svg-icon svg-icon-4x svg-icon-primary d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
                                                 viewBox="0 0 24 24" version="1.1">
@@ -73,7 +73,7 @@
                                     <!--begin::Col-->
                                     <div class="col bg-light-warning px-6 py-8 rounded-2 me-7 mb-7">
                                         <!--begin::Svg Icon | path: icons/duotone/Media/Equalizer.svg-->
-                                        <span class="svg-icon svg-icon-3x svg-icon-warning d-block my-2">
+                                        <span class="svg-icon svg-icon-4x svg-icon-warning d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
                                                 viewBox="0 0 24 24" version="1.1">
@@ -97,7 +97,7 @@
                                     <!--begin::Col-->
                                     <div class="col bg-light-success px-6 py-8 rounded-2 me-7 mb-7">
                                         <!--begin::Svg Icon | path: icons/duotone/Media/Equalizer.svg-->
-                                        <span class="svg-icon svg-icon-3x svg-icon-success d-block my-2">
+                                        <span class="svg-icon svg-icon-4x svg-icon-success d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
                                                 viewBox="0 0 24 24" version="1.1">
@@ -117,9 +117,9 @@
                                     <!--begin::Col-->
                                     <div class="col bg-light-primary px-6 py-8 rounded-2 mb-7">
                                         <!--begin::Svg Icon | path: icons/duotone/Communication/Add-user.svg-->
-                                        <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
+                                        <span class="svg-icon svg-icon-4x svg-icon-primary d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
-                                                viewBox="0 0 24 24" version="1.1">
+                                            viewBox="0 0 24 24" version="1.1">
                                                 <!-- <path d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" /> -->
                                                 <!-- <path d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z" fill="#000000" fill-rule="nonzero" /> -->
                                                 <path
@@ -143,9 +143,9 @@
                                     <!--begin::Col-->
                                     <div class="col bg-light-danger px-6 py-8 rounded-2 me-7 mb-7">
                                         <!--begin::Svg Icon | path: icons/duotone/Communication/Urgent-mail.svg-->
-                                        <span class="svg-icon svg-icon-3x svg-icon-danger d-block my-2">
+                                        <span class="svg-icon svg-icon-4x svg-icon-danger d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
-                                                viewBox="0 0 24 24" version="1.1">
+                                            viewBox="0 0 24 24" version="1.1">
                                                 <path
                                                     d="M12.7037037,14 L15.6666667,10 L13.4444444,10 L13.4444444,6 L9,12 L11.2222222,12 L11.2222222,14 L6,14 C5.44771525,14 5,13.5522847 5,13 L5,3 C5,2.44771525 5.44771525,2 6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,13 C19,13.5522847 18.5522847,14 18,14 L12.7037037,14 Z"
                                                     fill="#000000" opacity="0.3" />
@@ -164,9 +164,9 @@
                                     <!--begin::Col-->
                                     <div class="col bg-light-info px-6 py-8 rounded-2 me-7 mb-7">
                                         <!--begin::Svg Icon | path: icons/duotone/Communication/Urgent-mail.svg-->
-                                        <span class="svg-icon svg-icon-3x svg-icon-info d-block my-2">
+                                        <span class="svg-icon svg-icon-4x svg-icon-info d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
-                                                viewBox="0 0 24 24" version="1.1">
+                                            viewBox="0 0 24 24" version="1.1">
                                                 <path fill="#000000" fill-rule="evenodd"
                                                     d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z" />
                                                 <path fill="#000000" fill-rule="evenodd"
@@ -183,7 +183,7 @@
                                     <!--begin::Col-->
                                     <div class="col bg-light-danger px-6 py-8 rounded-2 mb-7">
                                         <!--begin::Svg Icon | path: icons/duotone/Communication/Urgent-mail.svg-->
-                                        <span class="svg-icon svg-icon-3x svg-icon-danger d-block my-2">
+                                        <span class="svg-icon svg-icon-4x svg-icon-danger d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
                                                 viewBox="0 0 24 24" version="1.1">
                                                 <path
@@ -210,9 +210,9 @@
                                     <div class="col bg-light-danger px-6 py-8 rounded-2 me-7 mb-7"
                                         style="background:#f04f4f;">
                                         <!--begin::Svg Icon-->
-                                        <span class="svg-icon svg-icon-3x svg-icon-dark d-block my-2">
+                                        <span class="svg-icon svg-icon-4x svg-icon-dark d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
-                                                viewBox="0 0 24 24" version="1.1">
+                                            viewBox="0 0 24 24" version="1.1">
                                                 <path
                                                     d="M12.9336061,16.072447 L19.36,10.9564761 L19.5181585,10.8312381 C20.1676248,10.3169571 20.2772143,9.3735535 19.7629333,8.72408713 C19.6917232,8.63415859 19.6104327,8.55269514 19.5206557,8.48129411 L12.9336854,3.24257445 C12.3871201,2.80788259 11.6128799,2.80788259 11.0663146,3.24257445 L4.47482784,8.48488609 C3.82645598,9.00054628 3.71887192,9.94418071 4.23453211,10.5925526 C4.30500305,10.6811601 4.38527899,10.7615046 4.47382636,10.8320511 L4.63,10.9564761 L11.0659024,16.0730648 C11.6126744,16.5077525 12.3871218,16.5074963 12.9336061,16.072447 Z"
                                                     fill="#000000" fill-rule="nonzero" />
@@ -231,7 +231,7 @@
                                     <!--begin::Col-->
                                     <div class="col bg-light-success px-6 py-8 rounded-2 mb-7">
                                         <!--begin::Svg Icon | path: icons/Design/Bucket.svg-->
-                                        <span class="svg-icon svg-icon-3x svg-icon-success d-block my-2">
+                                        <span class="svg-icon svg-icon-4x svg-icon-success d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
                                                 viewBox="0 0 24 24" version="1.1">

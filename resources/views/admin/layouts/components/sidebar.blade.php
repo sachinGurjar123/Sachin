@@ -23,6 +23,7 @@
                     src="{{ isset($global_setting_data['logo'])? asset('files/settings/' . $global_setting_data['logo'] . ''): asset('admin/dist/media/logos/favicon.ico') }}"
                     class="h-55px logo" />
             </a>
+
             <!--end::Logo-->
             <!--begin::Aside toggler-->
             <div id="kt_aside_toggle" class="btn btn-icon w-auto px-0 btn-active-color-primary aside-toggle"
@@ -52,6 +53,7 @@
         <!--end::Brand-->
         <!--begin::Aside menu-->
         <div class="aside-menu flex-column-fluid">
+
             <!--begin::Aside Menu-->
             <div class="hover-scroll-overlay-y my-5 my-lg-5" id="kt_aside_menu_wrapper" data-kt-scroll="true"
                 data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-height="auto"
