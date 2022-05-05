@@ -15,12 +15,13 @@ return new class extends Migration
     {
         Schema::create('vehicles', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id');
+            $table->bigInteger('user_id')->comment('bus operator id');
             $table->bigInteger('bus_type_id');
             $table->bigInteger('total_seats');
+            $table->string('name', 150)->nullable();
             $table->string('image');
-            $table->bigInteger('avg_rating');
-            $table->bigInteger('total_reviews');
+            $table->bigInteger('avg_rating')->default(0);
+            $table->bigInteger('total_reviews')->default(0);
             $table->tinyInteger('is_active')->default(1)->comment('1: Active 0:Inactive');
             $table->tinyInteger('is_approved')->default(0)->comment('0:Pending 1: Approved 2:Rejected');
             $table->text('rejected_reason')->nullable();
