@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('company_name')->nullable();
             $table->string('email')->unique()->nullable();
             $table->string('mobile_no')->unique();
             $table->string('image')->nullable();
@@ -23,7 +24,7 @@ return new class extends Migration
             $table->date('dob')->nullable();
             $table->text('address')->nullable();
             $table->string('lang')->default('en');
-            $table->tinyInteger('is_active')->default(4)->comment('1: Active 0:Inactive');
+            $table->tinyInteger('is_active')->default(1)->comment('1: Active 0:Inactive');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->text('device_id')->nullable();
