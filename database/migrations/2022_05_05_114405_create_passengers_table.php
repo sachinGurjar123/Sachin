@@ -16,9 +16,10 @@ return new class extends Migration
         Schema::create('passengers', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('vrtm_id');
+            $table->bigInteger('vehicle_id');
             $table->bigInteger('booking_id');
             $table->string('name')->nullable();
-            $table->string('mobile')->nullable();
+            $table->bigInteger('price')->default(0);
             $table->bigInteger('age')->nullable();
             $table->string('gender');
             $table->string('document')->nullable();

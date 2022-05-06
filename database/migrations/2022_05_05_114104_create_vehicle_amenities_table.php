@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('vehicle_amenities', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('vrtm_id');
+            $table->bigInteger('vehicle_id');
             $table->bigInteger('amenities_id');
             $table->timestamps();
         });

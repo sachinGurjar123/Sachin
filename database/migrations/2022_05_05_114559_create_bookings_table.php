@@ -16,9 +16,11 @@ return new class extends Migration
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('vrtm_id');
+            $table->bigInteger('vehicle_id');
             $table->bigInteger('user_id');
             $table->bigInteger('bus_type_id');
-            $table->bigInteger('price');
+            $table->bigInteger('total_price');
+            $table->bigInteger('total_passengers');
             $table->string('source_point');
             $table->string('drop_point');
             $table->tinyInteger('status')->default(0)->comment('0:Pending 1:Confirmed 2:Cancelled 3:Rejected 4:Completed');

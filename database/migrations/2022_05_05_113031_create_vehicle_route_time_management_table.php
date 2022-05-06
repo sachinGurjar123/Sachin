@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('vehicle_id');
             $table->bigInteger('user_id')->comment('bus operator id');
+            $table->string('week_days_id')->comment('week days id');
             $table->bigInteger('total_available_seats')->default(0);
             $table->bigInteger('total_filled_seats')->default(0);
             $table->dateTime('arrival_time')->nullable();
