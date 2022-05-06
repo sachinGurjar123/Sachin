@@ -5,11 +5,12 @@ return [
     'login' =>
     array(
         'customer' => 'Customer',
+        'login' => 'login',
         'user' => 'User',
         'name' => 'Name',
         'email' => 'Email',
         'phone' => 'Mobile',
-        'company_name' => 'Common-Setup',
+        'company_name' => 'Fast Bus',
     ),
 
     'topbar' =>
@@ -101,8 +102,9 @@ return [
         'user' => 'User|Users',
         'role' => 'Role|Roles',
         'permission' => 'Permission|Permissions',
-        'customer' => 'Customer|Customers',
+        'customer' => 'Customer|User',
         'product' => 'Product|Products',
+        'operator'=> 'Bus Operator',
     ),
 
 
@@ -116,6 +118,9 @@ return [
         'quantity_title' => 'Quantity',
         'price_title' => 'Price',
         'import_product' => 'Import Product',
+    ),
+    'busoprator'=> array(
+        'name' =>'Bus Operator'
     ),
 
     //Table Title

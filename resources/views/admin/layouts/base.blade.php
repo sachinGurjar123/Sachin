@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     {{-- {{ asset('admin/dist/') }} --}}
-    <link rel="shortcut icon" {{-- href="{{ isset($global_setting_data['favicon'])? $global_setting_data['favicon']: asset('admin/dist/media/logos/favicon.ico') }}" /> --}}
+    <link rel="shortcut icon"
         href="{{ isset($global_setting_data['favicon'])? asset('files/settings/' . $global_setting_data['favicon'] . ''): asset('admin/dist/media/logos/favicon.ico') }}" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />

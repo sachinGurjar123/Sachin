@@ -84,6 +84,7 @@ Route::group(['middleware' => ['optimizeImages'], 'prefix' => 'admin', 'as' => '
             Route::delete('products/delete-images/{id}', 'deleteImage')->name('products.delete_image');
         });
         Route::resource('/products', ProductController::class);
+        Route::resource('busoperator',BusOperatorController::class);
 
         //Setting manager
         Route::controller(SettingController::class)->group(function () {

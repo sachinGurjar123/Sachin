@@ -3,12 +3,12 @@
 <!--begin::Head-->
 
 <head>
-    <title>Common-Setup Login</title>
+    <title>{{ isset($global_setting_data['site_name']) ? $global_setting_data['site_name'] : trans_choice('content.login.company_name', 1) }}</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
 
-    <link rel="shortcut icon" href="{{ asset('admin/dist/media/logos/favicon.ico') }}" />
+    <link rel="shortcut icon" href="{{ isset($global_setting_data['favicon'])? asset('files/settings/' . $global_setting_data['favicon'] . ''): asset('admin/dist/media/logos/favicon.ico') }}}" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <!--end::Fonts-->

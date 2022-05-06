@@ -24,9 +24,13 @@ class CustomerService
      * @param Request $request
      * @return User
      */
-    public static function create(array $data)
+    public static function create(array $data, $role_name = null)
     {
+        //
         $data = User::create($data);
+        if($role_name){
+            $data->assignRole('Customer');
+        }
         return $data;
     }
 
