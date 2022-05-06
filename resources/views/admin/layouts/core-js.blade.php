@@ -470,7 +470,7 @@
 
     function userImageNameButton(url, name = 'Guest', email = '', img_url = '') {
         if (img_url == '' || img_url == null) {
-            var img_url = '{{ asset('admin/dist/media/avatars/150-26.jpg') }}';
+            var img_url = "{{ asset('admin/dist/media/avatars/150-26.jpg') }}";
         }
         return `<!--begin:: Avatar -->
                     <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
