@@ -22,7 +22,7 @@
                                 <!--begin::Row-->
                                 <div class="row g-0">
                                     <!--begin::Col-->
-                                    <div class="col bg-light-primary px-6 py-8 rounded-2 me-7 mb-7">
+                                    <div class="col bg-light-primary px-10 py-10 rounded-2 me-7 mb-7">
                                         <!--begin::Svg Icon | path: icons/duotone/Communication/Add-user.svg-->
                                         <span class="svg-icon svg-icon-4x svg-icon-primary d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
@@ -44,7 +44,7 @@
                                     </div>
                                     <!--end::Col-->
                                     <!--begin::Col-->
-                                    <div class="col bg-light-primary px-6 py-8 rounded-2 me-7 mb-7">
+                                    <div class="col bg-light-primary px-10 py-10 rounded-2 me-7 mb-7">
                                         <!--begin::Svg Icon | path: icons/duotone/Communication/Add-user.svg-->
                                         <span class="svg-icon svg-icon-4x svg-icon-primary d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@
                                     <!--end::Col-->
 
                                     <!--begin::Col-->
-                                    <div class="col bg-light-warning px-6 py-8 rounded-2 me-7 mb-7">
+                                    <div class="col bg-light-warning px-10 py-10 rounded-2 me-7 mb-7">
                                         <!--begin::Svg Icon | path: icons/duotone/Media/Equalizer.svg-->
                                         <span class="svg-icon svg-icon-4x svg-icon-warning d-block my-2">
                                             <svg xmlns="http://www.w3.org/2000/svg"
