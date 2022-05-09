@@ -13,18 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('passengers', function (Blueprint $table) {
+        Schema::create('amenities', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('vr_id');
-            $table->bigInteger('vehicle_id');
-            $table->bigInteger('booking_id');
             $table->string('name')->nullable();
-            $table->bigInteger('price')->default(0);
-            $table->bigInteger('age')->nullable();
-            $table->string('gender');
-            $table->string('document')->nullable();
-            $table->string('seat_no');
-            $table->softDeletes();
+            $table->string('icon')->nullable();
             $table->timestamps();
         });
     }
@@ -36,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('passengers');
+        Schema::dropIfExists('amenities');
     }
 };

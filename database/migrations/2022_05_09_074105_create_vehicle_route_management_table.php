@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('vehicle_route_time_management', function (Blueprint $table) {
+        Schema::create('vehicle_route_management', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('vehicle_id');
             $table->bigInteger('user_id')->comment('bus operator id');
@@ -41,6 +41,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('vehicle_route_time_management');
+        Schema::dropIfExists('vehicle_route_management');
     }
 };
