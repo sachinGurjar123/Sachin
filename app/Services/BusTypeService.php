@@ -2,19 +2,19 @@
 
 namespace App\Services;
 
-use App\Models\Category;
+use App\Models\BusType;
 
-class CategoryService
+class BusTypeService
 {
     /**
      * Update the specified resource in storage.
      *
      * @param  array $data
-     * @return Category
+     * @return BusType
      */
     public static function create(array $data)
     {
-        $data = Category::create($data);
+        $data = BusType::create($data);
         return $data;
     }
 
@@ -22,12 +22,12 @@ class CategoryService
      * Update the specified resource in storage.
      *
      * @param  Array $data - Updated Data
-     * @param  Category $category
-     * @return Category
+     * @param  BusType $bus_type
+     * @return BusType
      */
-    public static function update(array $data, Category $category)
+    public static function update(array $data, BusType $bus_type)
     {
-        $data = $category->update($data);
+        $data = $bus_type->update($data);
         return $data;
     }
 
@@ -35,23 +35,23 @@ class CategoryService
      * Get Data By Id from storage.
      *
      * @param  Int $id
-     * @return Category
+     * @return BusType
      */
     public static function getById($id)
     {
-        $data = Category::find($id);
+        $data = BusType::find($id);
         return $data;
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  App\Models\Category
+     * @param  App\Models\BusType
      * @return bool
      */
-    public static function delete(Category $category)
+    public static function delete(BusType $bus_type)
     {
-        $data = $category->delete();
+        $data = $bus_type->delete();
         return $data;
     }
 
@@ -59,23 +59,34 @@ class CategoryService
      * update data in storage.
      *
      * @param  Array $data - Updated Data
-     * @param  Int $id - Category Id
+     * @param  Int $id - BusType Id
      * @return bool
      */
     public static function status(array $data, $id)
     {
-        $data = Category::where('id', $id)->update($data);
+        $data = BusType::where('id', $id)->update($data);
         return $data;
     }
 
     /**
      * Get data for datatable from storage.
      *
-     * @return Category with states, countries
+     * @return BusType with states, countries
      */
     public static function datatable()
     {
-        $data = Category::orderBy('created_at', 'desc');
+        $data = BusType::orderBy('created_at', 'desc');
+        return $data;
+    }
+
+    /**
+     * Get Active data from storage.
+     *
+     * @return City
+     */
+    public static function getActiveData()
+    {
+        $data = BusType::where('is_active', 1);
         return $data;
     }
 }

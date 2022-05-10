@@ -2,19 +2,19 @@
 
 namespace App\Services;
 
-use App\Models\Category;
+use App\Models\City;
 
-class CategoryService
+class CityService
 {
     /**
      * Update the specified resource in storage.
      *
      * @param  array $data
-     * @return Category
+     * @return City
      */
     public static function create(array $data)
     {
-        $data = Category::create($data);
+        $data = City::create($data);
         return $data;
     }
 
@@ -22,12 +22,12 @@ class CategoryService
      * Update the specified resource in storage.
      *
      * @param  Array $data - Updated Data
-     * @param  Category $category
-     * @return Category
+     * @param  City $city
+     * @return City
      */
-    public static function update(array $data, Category $category)
+    public static function update(array $data, City $city)
     {
-        $data = $category->update($data);
+        $data = $city->update($data);
         return $data;
     }
 
@@ -35,23 +35,23 @@ class CategoryService
      * Get Data By Id from storage.
      *
      * @param  Int $id
-     * @return Category
+     * @return City
      */
     public static function getById($id)
     {
-        $data = Category::find($id);
+        $data = City::find($id);
         return $data;
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  App\Models\Category
+     * @param  App\Models\City
      * @return bool
      */
-    public static function delete(Category $category)
+    public static function delete(City $city)
     {
-        $data = $category->delete();
+        $data = $city->delete();
         return $data;
     }
 
@@ -59,23 +59,34 @@ class CategoryService
      * update data in storage.
      *
      * @param  Array $data - Updated Data
-     * @param  Int $id - Category Id
+     * @param  Int $id - City Id
      * @return bool
      */
     public static function status(array $data, $id)
     {
-        $data = Category::where('id', $id)->update($data);
+        $data = City::where('id', $id)->update($data);
         return $data;
     }
 
     /**
      * Get data for datatable from storage.
      *
-     * @return Category with states, countries
+     * @return City with states, countries
      */
     public static function datatable()
     {
-        $data = Category::orderBy('created_at', 'desc');
+        $data = City::orderBy('created_at', 'desc');
+        return $data;
+    }
+
+    /**
+     * Get Active data from storage.
+     *
+     * @return City
+     */
+    public static function getActiveData()
+    {
+        $data = City::where('is_active', 1);
         return $data;
     }
 }

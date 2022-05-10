@@ -13,10 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('amenities', function (Blueprint $table) {
+        Schema::create('cities', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 150)->nullable();
-            $table->string('icon', 255)->nullable();
+            $table->string('city_name', 150)->nullable();
             $table->tinyInteger('is_active')->default(1)->comment('1: Active 0:Inactive');
             $table->timestamps();
         });
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('amenities');
+        Schema::dropIfExists('cities');
     }
 };
