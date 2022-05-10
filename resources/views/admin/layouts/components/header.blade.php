@@ -76,6 +76,7 @@ $import['status'] = isset($import['status']) ? $import['status'] : false;
                             </span>
                             <!--end::Svg Icon-->{{ trans_choice('content.import', 1) }}
                         </a>
+                       
                         <!--begin::Menu 1-->
                         <div class="menu menu-sub menu-sub-dropdown w-500px w-md-500px" data-kt-menu="true">
                             <!--begin::Header-->

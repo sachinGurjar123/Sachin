@@ -7,7 +7,7 @@
         <div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
             <!--begin::Logo-->
             <a href="javascript:void(0)" class="mb-12">
-                <img alt="Logo" src="{{ asset('admin/dist/media/logos/logo-2.svg') }}" class="h-45px" />
+                <img alt="Logo" src="{{ isset($global_setting_data['logo'])? asset('files/settings/' . $global_setting_data['logo'] . ''): asset('admin/dist/media/logos/fast-bus-logo.png') }}" class="h-80px w-150px" />
             </a>
             <!--end::Logo-->
             <!--begin::Wrapper-->
@@ -20,7 +20,7 @@
                     <!--begin::Heading-->
                     <div class="text-center mb-10">
                         <!--begin::Title-->
-                        <h1 class="text-dark mb-3">Sign In to {{ trans_choice('content.login.company_name', 1) }} </h1>
+                        <h1 class="text-dark mb-3"> {{ isset($global_setting_data['site_name']) ? $global_setting_data['site_name'] . ' '. trans_choice('content.login.login', 1) : trans_choice('content.login.company_name', 1) }} </h1>
                         <!--end::Title-->
                         <!--begin::Link-->
                         {{-- <div class="text-gray-400 fw-bold fs-4">New Here?

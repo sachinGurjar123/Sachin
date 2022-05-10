@@ -5,11 +5,12 @@ return [
     'login' =>
     array(
         'customer' => 'Customer',
+        'login' => 'login',
         'user' => 'User',
         'name' => 'Name',
         'email' => 'Email',
         'phone' => 'Mobile',
-        'company_name' => 'Common-Setup',
+        'company_name' => 'Fast Bus',
     ),
 
     'topbar' =>
@@ -65,31 +66,31 @@ return [
 
     'dashboard_cards' =>
     array(
-        'new_users' => 'New Users',
+        'new_users' => 'Total Customer',
         'total_roles' => 'Total Roles',
         'total_permissions' => 'Total Permissions',
         'select_year' => 'Select Year',
         'total_manager' => 'Total Manager',
-        'total_vendors' => 'Total Vendors',
+        //'total_vendors' => '',
         'weekly_sales' => 'Weekly Sales',
-        'yearly_sales' => 'Yearly Sales',
+        'yearly_sales' => 'Total Buses',
 
         'item_count' => 'Item Count',
-        'total_vendors' => 'Total Vendors',
+        'total_vendors' => '',
         'total_income' => 'Total Income',
-        'total_purchase' => 'Total Purchase',
+        'total_purchase' => '',
         'total_fund_balance' => 'Total Fund Balance',
         'total_transaction' => 'Total Transaction',
         'total_amount_spent' => 'Total Amount Spent',
         'total_profit_loss' => 'Total Profit Loss',
-        'total_dept_balance' => 'Total Dept Balance',
-        'total_asset' => 'Total Asset',
+        'total_dept_balance' => '',
+        'total_asset' => '',
         'total_unpaid_bill' => 'Total UnPaid Bill',
-        'total_unpaid_amount' => 'Total Amount To Be Pay (Vendor & Staff)',
-        'total_unrecieved_bill' => 'Total UnRecieved Bill',
-        'total_unrecieved_amount' => 'Total Amount To Be Receive (Client)',
+        'total_unpaid_amount' => '',
+        'total_unrecieved_bill' => '',
+        'total_unrecieved_amount' => '',
         'total_revenue' => 'Total Revenue',
-        'total_clients' => 'Total Clients',
+        'total_clients' => 'Total Bus Operator',
     ),
 
 
@@ -101,8 +102,9 @@ return [
         'user' => 'User|Users',
         'role' => 'Role|Roles',
         'permission' => 'Permission|Permissions',
-        'customer' => 'Customer|Customers',
+        'customer' => 'Customer|User',
         'product' => 'Product|Products',
+        'operator'=> 'Bus Operator',
     ),
 
 
@@ -116,6 +118,9 @@ return [
         'quantity_title' => 'Quantity',
         'price_title' => 'Price',
         'import_product' => 'Import Product',
+    ),
+    'busoprator'=> array(
+        'name' =>'Bus Operator'
     ),
 
     //Table Title

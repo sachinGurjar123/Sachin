@@ -98,13 +98,13 @@
         'title' => __('messages.list', [
             'name' => trans_choice('content.customer', 2),
         ]),
-        'breadcrumbs' => Breadcrumbs::render('admin.customers.index'),
+        //'breadcrumbs' => Breadcrumbs::render('bus operator'),
         'filter' => true,
         'create_btn' => [
             'status' => true,
-            'route' => route('admin.customers.create'),
+            'route' => route('admin.busoperator.create'),
             'name' => __('messages.create', [
-                'name' => trans_choice('content.customer', 2),
+                'name' => trans_choice('content.busoprator.name', 1),
             ]),
         ],
         'export' => [
@@ -152,7 +152,7 @@
                     $(row).find("td").last().addClass('text-danger');
                 },
                 ajax: {
-                    "url": "{{ route('admin.customers.index') }}",
+                    "url": "{{ route('admin.busoperator.index') }}",
                     data: function(d) {
                         d.name = $('input[name=name]').val();
                         d.email = $('input[name=email]').val();
@@ -183,7 +183,7 @@
                         data: 'name',
                         name: 'name',
                         render: function(data, type, row, meta) {
-                            var show_url = `{{ url('/') }}/admin/customers/` + row['id'] +
+                            var show_url = `{{ url('/') }}/admin/busoperator/` + row['id'] +
                                 `?tab=details`;
                             return ` <a href="${show_url}">
                                         <div class="font-medium whitespace-no-wrap">${data}</div>
@@ -284,3 +284,4 @@
         });
     </script>
 @endpush
+
