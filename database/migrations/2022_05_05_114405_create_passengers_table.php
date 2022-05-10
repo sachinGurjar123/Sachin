@@ -18,11 +18,11 @@ return new class extends Migration
             $table->bigInteger('vr_id');
             $table->bigInteger('vehicle_id');
             $table->bigInteger('booking_id');
-            $table->string('name')->nullable();
+            $table->string('name', 255)->nullable();
             $table->bigInteger('price')->default(0);
             $table->bigInteger('age')->nullable();
-            $table->string('gender');
-            $table->string('document')->nullable();
+            $table->string('gender', 10);
+            $table->string('document', 150)->nullable();
             $table->string('seat_no');
             $table->softDeletes();
             $table->timestamps();

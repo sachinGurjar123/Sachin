@@ -16,9 +16,9 @@ return new class extends Migration
     {
         Schema::create('master_otps', function (Blueprint $table) {
             $table->id();
-            $table->string('mobile_no')->nullable();
-            $table->string('otp')->nullable();
-            $table->string('role_id')->nullable();
+            $table->string('mobile_no', 20)->nullable();
+            $table->string('otp', 10)->nullable();
+            $table->integer('role_id')->nullable();
             $table->timestamps();
         });
     }

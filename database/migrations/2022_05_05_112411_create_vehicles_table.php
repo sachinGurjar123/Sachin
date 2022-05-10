@@ -19,7 +19,7 @@ return new class extends Migration
             $table->bigInteger('bus_type_id');
             $table->bigInteger('total_seats');
             $table->string('name', 150)->nullable();
-            $table->string('image');
+            $table->string('image', 255);
             $table->bigInteger('avg_rating')->default(0);
             $table->bigInteger('total_reviews')->default(0);
             $table->tinyInteger('is_active')->default(1)->comment('1: Active 0:Inactive');
